@@ -8,8 +8,6 @@ somewhat tricky problem to solve. `Gengo <http://gengo.com/>`_ is a service that
 (which is often of higher quality than machine translation), and an API to manage sending in work and watching
 jobs. This is a Python interface to make using the API simpler.
 
-`CHANGELOG is here <https://github.com/gengo/gengo-python/blob/master/CHANGELOG.rst>`_
-
 Installation & Requirements
 ---------------------------
 Installing this library using pip is very simple:
@@ -21,7 +19,7 @@ Installing this library using pip is very simple:
 Otherwise, you can install from source by getting the repo:
 
 ::
-   
+
    git clone git://github.com/gengo/gengo-python.git
 
 And then installing the library:
@@ -39,11 +37,17 @@ Gengo has a full suite of unit tests. To run them, make sure you have the `mock`
 
    flake8 gengo
 
-If you wish to run a single test, such as TestTranslationJobFlowFileUpload:
+If you wish to run a single test, such as NowTestJobPost
 
 ::
 
-   python -m unittest -v gengo.tests.TestTranslationJobFlowFileUpload
+   python -m unittest -v tests.testPostJobs.NowTestJobPost
+
+Posting Job Posts in Gengo Sandbox is pretty simple, find + view/edit PostJobs.py file under gengo directory to see how it works. Or if you want a quick result, simply run:
+
+::
+
+  python gengo/PostJobs.py
 
 
 Question, Comments, Complaints, Praise?
@@ -65,13 +69,13 @@ Full documentation can be found `here <http://developers.gengo.com>`_, but anyon
 .. code-block:: python
 
    from gengo import Gengo
-   
+
    gengo = Gengo(
        public_key='your_public_key',
        private_key='your_private_key',
        sandbox=True,
    )
-   
+
    print(gengo.getAccountBalance())
 
 All function definitions can be found inside gengo/mockdb.py as a dictionary: the key of the dictionary entry is the function name, and the parameters

@@ -323,7 +323,6 @@ class TestTranslationJobFlowGroupJob(unittest.TestCase):
                            sandbox=True)
         self.created_job_ids = []
 
-        
         self.json_mock = mock.Mock()
         self.json_mock.json.return_value = {'opstat': 'ok'}
         self.getMock = RequestsMock(return_value=self.json_mock)
