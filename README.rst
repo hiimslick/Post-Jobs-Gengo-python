@@ -15,7 +15,7 @@ Run a single test:
 
    python -m unittest -v tests.testPostJobs.NowTestJobPost
 
-Posting Job Posts in Gengo Sandbox is pretty simple, find + view/edit PostJobs.py file under gengo directory to see how it works. Or if you want a quick result, simply run:
+Posting Job Posts in Gengo Sandbox is pretty simple, find + view/edit PostJobs.py file to see the magic and how it works. Or if you want a quick result, simply run:
 
 ::
 
