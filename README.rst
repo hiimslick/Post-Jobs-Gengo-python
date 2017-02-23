@@ -19,7 +19,7 @@ Posting Job Posts in Gengo Sandbox is pretty simple, find + view/edit PostJobs.p
 
 ::
 
-python PostJobs.py
+   python PostJobs.py
 
 
 All function definitions can be found inside gengo/mockdb.py as a dictionary: the key of the dictionary entry is the function name, and the parameters
