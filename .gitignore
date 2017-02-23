@@ -1,7 +1,0 @@
-*.pyc
-build
-dist
-*.swp
-gengo.egg-info
-gengo/test_keys.py
-.coverage
